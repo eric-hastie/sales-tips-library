@@ -433,7 +433,9 @@ function render(){
       ? SHELF_OF[state.topics[0]].note + ' Posts whose main subject is this topic, plus any that touch it.'
       : state.topics.length
         ? 'Posts carrying every one of these topics.'
-        : `A working reference of ${POSTS.length} sales posts, sorted into ${Object.keys(TOPICS).length} topics across seven shelves. Search runs over the full text of every post, including transcribed images and video captions.`;
+        : PUBLIC
+          ? `${POSTS.length} sales posts sorted into ${Object.keys(TOPICS).length} topics across seven shelves. Each entry shows its opening lines and links to the original; search matches every word in the full post, including transcribed images and video captions.`
+          : `A working reference of ${POSTS.length} sales posts, sorted into ${Object.keys(TOPICS).length} topics across seven shelves. Search runs over the full text of every post, including transcribed images and video captions.`;
 
   // topic shortcuts when the query names a subject rather than a phrase
   topichits.innerHTML = '';
