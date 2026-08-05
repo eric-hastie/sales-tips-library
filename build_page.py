@@ -196,7 +196,7 @@ TEMPLATE = r"""<title>Sales Tips Library</title>
   *{box-sizing:border-box}
   body{
     margin:0;background:var(--bg);color:var(--ink);
-    font-family:var(--sans);font-size:11.5px;line-height:1.3;
+    font-family:var(--sans);font-size:12px;line-height:1.32;
     -webkit-font-smoothing:antialiased;
   }
   a{color:var(--accent)}
@@ -235,7 +235,7 @@ TEMPLATE = r"""<title>Sales Tips Library</title>
   .topic{
     display:flex;align-items:baseline;gap:7px;width:100%;text-align:left;
     padding:4px 9px 4px 17px;border:0;background:none;cursor:pointer;border-radius:4px;
-    font-family:var(--sans);font-size:10.4px;color:var(--ink-2);line-height:1.25;
+    font-family:var(--sans);font-size:10.8px;color:var(--ink-2);line-height:1.28;
   }
   .topic:hover{background:var(--surface);color:var(--ink)}
   .topic[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent);font-weight:640}
@@ -285,7 +285,7 @@ TEMPLATE = r"""<title>Sales Tips Library</title>
   .eyebrow{font-family:var(--mono);font-size:9.5px;text-transform:uppercase;
     letter-spacing:.1em;color:var(--ink-3)}
   .head h2{font-size:18px;margin:7px 0 0;letter-spacing:-.015em;text-wrap:balance;font-weight:640}
-  .head p{color:var(--ink-2);margin:6px 0 0;max-width:70ch;font-size:11.5px;line-height:1.4}
+  .head p{color:var(--ink-2);margin:6px 0 0;max-width:70ch;font-size:12px;line-height:1.42}
   .statrow{display:flex;gap:22px;margin:17px 0 0;padding:11px 0;
     border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
   .stat b{display:block;font-family:var(--mono);font-size:13px;
@@ -323,7 +323,7 @@ TEMPLATE = r"""<title>Sales Tips Library</title>
     padding:2px 4px;font-family:var(--sans);color:inherit;
   }
   .ptitlebtn:hover .ptitle{color:var(--accent)}
-  .ptitle{font-size:12px;line-height:1.3;font-weight:560;margin:0;text-wrap:pretty}
+  .ptitle{font-size:12.5px;line-height:1.32;font-weight:560;margin:0;text-wrap:pretty}
   .pnum{font-family:var(--mono);font-size:9.5px;color:var(--ink-3);
     font-variant-numeric:tabular-nums;padding-top:2px}
   .pmeta{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin:4px 0 0;padding:0 4px;
@@ -342,7 +342,7 @@ TEMPLATE = r"""<title>Sales Tips Library</title>
 
   .body{display:none;padding:5px 4px 14px}
   .post[data-open="1"] .body{display:block}
-  .body .text{font-family:var(--serif);font-size:12.6px;line-height:1.38;
+  .body .text{font-family:var(--serif);font-size:13.1px;line-height:1.4;
     max-width:72ch;color:var(--ink)}
   /* Paragraphs are real elements, not blank lines in a pre-wrap block, so the
      gap between them is a margin we control rather than a full blank line. */
@@ -353,14 +353,14 @@ TEMPLATE = r"""<title>Sales Tips Library</title>
     letter-spacing:.08em;color:var(--ink-2);font-weight:600}
   .sect .note{font-size:10px;color:var(--ink-3);margin:0 0 8px;max-width:66ch;line-height:1.4}
   .repost{border-left:2px solid var(--rule);padding:1px 0 1px 11px;margin-bottom:11px;
-    color:var(--ink-2);font-size:11px;line-height:1.4;max-width:66ch}
+    color:var(--ink-2);font-size:11.5px;line-height:1.42;max-width:66ch}
   .actions{display:flex;gap:13px;align-items:center;margin-top:13px;font-size:10.5px}
   .actions a{text-decoration:none;border-bottom:1px solid var(--accent-soft);padding-bottom:1px}
   .actions a:hover{border-bottom-color:var(--accent)}
 
   .empty{padding:48px 4px;color:var(--ink-2);max-width:60ch}
   .empty h3{margin:0 0 7px;font-size:13px;font-weight:640;color:var(--ink)}
-  .empty p{font-size:11.5px;line-height:1.45}
+  .empty p{font-size:12px;line-height:1.45}
   .emptyacts{display:flex;gap:9px;margin-top:15px;flex-wrap:wrap}
 
   @media (max-width:900px){

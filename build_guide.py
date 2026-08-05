@@ -240,7 +240,7 @@ TEMPLATE = r"""<title>Sales Field Guide</title>
 
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:var(--sans);font-size:11.5px;line-height:1.3;
+    font-family:var(--sans);font-size:12px;line-height:1.32;
     -webkit-font-smoothing:antialiased}
   a{color:var(--accent)}
 
@@ -254,7 +254,7 @@ TEMPLATE = r"""<title>Sales Field Guide</title>
     text-transform:uppercase;letter-spacing:.09em;color:var(--ink-3);line-height:1.4}
   .toc{padding:10px 8px 0;display:flex;flex-direction:column;gap:1px}
   .toc a{display:block;padding:5px 9px;border-radius:4px;text-decoration:none;
-    color:var(--ink-2);font-size:10.6px;line-height:1.3}
+    color:var(--ink-2);font-size:11px;line-height:1.32}
   .toc a:hover{background:var(--surface);color:var(--ink)}
   .toc a.on{background:var(--accent-soft);color:var(--accent);font-weight:640}
   .toc .tk{display:block;font-family:var(--mono);font-size:8.2px;
@@ -274,10 +274,10 @@ TEMPLATE = r"""<title>Sales Field Guide</title>
 
   .hero{padding:34px 40px 0;max-width:760px}
   .hero h1{font-size:26px;margin:0;letter-spacing:-.022em;font-weight:650;text-wrap:balance}
-  .hero .stand{font-family:var(--serif);font-size:14.5px;line-height:1.45;
+  .hero .stand{font-family:var(--serif);font-size:15px;line-height:1.45;
     color:var(--ink-2);margin:10px 0 0;max-width:62ch}
   .hero .how{margin:18px 0 0;padding:12px 14px;border:1px solid var(--rule);
-    border-radius:6px;background:var(--surface);font-size:10.8px;color:var(--ink-2);
+    border-radius:6px;background:var(--surface);font-size:11.3px;color:var(--ink-2);
     line-height:1.5;max-width:68ch}
   .hero .how b{color:var(--ink)}
 
@@ -285,14 +285,14 @@ TEMPLATE = r"""<title>Sales Field Guide</title>
   .kicker{font-family:var(--mono);font-size:9px;text-transform:uppercase;
     letter-spacing:.1em;color:var(--ink-3)}
   .sec h2{font-size:19px;margin:6px 0 0;letter-spacing:-.017em;font-weight:640;text-wrap:balance}
-  .sec .lede{font-family:var(--serif);font-size:13.2px;line-height:1.45;color:var(--ink-2);
+  .sec .lede{font-family:var(--serif);font-size:13.7px;line-height:1.46;color:var(--ink-2);
     margin:8px 0 0;max-width:64ch}
   .sec h3{font-size:11.5px;margin:24px 0 0;font-weight:680;letter-spacing:.005em;
     padding-bottom:5px;border-bottom:1px solid var(--rule)}
-  .sec > p{font-size:11.5px;line-height:1.45;color:var(--ink-2);margin:10px 0 0;max-width:66ch}
+  .sec > p{font-size:12px;line-height:1.46;color:var(--ink-2);margin:10px 0 0;max-width:66ch}
 
   .pts{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
-  .pts li{font-size:11.5px;line-height:1.45;color:var(--ink-2);max-width:70ch;
+  .pts li{font-size:12px;line-height:1.46;color:var(--ink-2);max-width:70ch;
     padding-left:13px;position:relative}
   .pts li::before{content:"";position:absolute;left:0;top:.52em;width:4px;height:4px;
     border-radius:50%;background:var(--rule);}
@@ -305,13 +305,13 @@ TEMPLATE = r"""<title>Sales Field Guide</title>
     color:var(--accent);border:1px solid var(--accent-soft);border-radius:3px;
     height:17px;display:flex;align-items:center;justify-content:center;
     background:var(--accent-soft)}
-  .steps strong{display:block;font-size:11.5px;font-weight:640;color:var(--ink)}
-  .steps span{display:block;font-size:11.5px;line-height:1.45;color:var(--ink-2);margin-top:2px}
+  .steps strong{display:block;font-size:12px;font-weight:640;color:var(--ink)}
+  .steps span{display:block;font-size:12px;line-height:1.46;color:var(--ink-2);margin-top:2px}
 
   .finding{margin:14px 0 0;padding:13px 15px;border-radius:6px;background:var(--surface);
     border:1px solid var(--rule);border-left:2px solid var(--accent);max-width:70ch}
   .finding h4{margin:0;font-size:12px;font-weight:660;line-height:1.35;text-wrap:balance}
-  .finding p{margin:6px 0 0;font-size:11.5px;line-height:1.45;color:var(--ink-2)}
+  .finding p{margin:6px 0 0;font-size:12px;line-height:1.46;color:var(--ink-2)}
 
   .conflict{margin:14px 0 0;padding:13px 15px;border-radius:6px;
     background:var(--warn-soft);border:1px solid var(--rule);max-width:74ch}
@@ -319,10 +319,10 @@ TEMPLATE = r"""<title>Sales Field Guide</title>
   .sides{display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .side .slab{font-family:var(--mono);font-size:8.6px;text-transform:uppercase;
     letter-spacing:.09em;color:var(--warn);font-weight:700}
-  .side p{margin:4px 0 0;font-size:11px;line-height:1.45;color:var(--ink-2)}
+  .side p{margin:4px 0 0;font-size:11.5px;line-height:1.46;color:var(--ink-2)}
 
   table{border-collapse:collapse;width:100%;max-width:64ch;margin:12px 0 0}
-  td{padding:5px 0;border-bottom:1px solid var(--rule-2);font-size:11.2px;
+  td{padding:5px 0;border-bottom:1px solid var(--rule-2);font-size:11.7px;
     color:var(--ink-2);vertical-align:top;line-height:1.4}
   .data .num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;
     white-space:nowrap;width:1%;padding-left:14px;font-size:11px}
@@ -361,7 +361,7 @@ TEMPLATE = r"""<title>Sales Field Guide</title>
     line-height:1;padding:0 2px}
   .dclose:hover{color:var(--ink)}
   .dbody{padding:14px 18px 40px;overflow-y:auto}
-  .dbody .text{font-family:var(--serif);font-size:12.6px;line-height:1.38;color:var(--ink)}
+  .dbody .text{font-family:var(--serif);font-size:13.1px;line-height:1.4;color:var(--ink)}
   .dbody .text p{margin:0 0 .42em}
   .dsect{margin-top:15px;padding-top:11px;border-top:1px solid var(--rule)}
   .dsect h4{margin:0 0 3px;font-family:var(--mono);font-size:9.5px;text-transform:uppercase;
