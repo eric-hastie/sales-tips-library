@@ -160,8 +160,9 @@ def render_section(s):
         elif t == "numbered":
             h.append('<ol class="steps">')
             for title, text, c in b["items"]:
-                h.append(f'<li><strong>{esc(title)}</strong>'
-                         f'<span>{linkify(text)}{cites(c)}</span></li>')
+                h.append(f'<li><div class="stepbody">'
+                         f'<strong>{esc(title)}</strong>'
+                         f'<span>{linkify(text)}{cites(c)}</span></div></li>')
             h.append("</ol>")
 
         elif t == "conflict":
@@ -299,12 +300,13 @@ TEMPLATE = r"""<title>Sales Field Guide</title>
 
   .steps{margin:12px 0 0;padding:0;list-style:none;counter-reset:s;
     display:flex;flex-direction:column;gap:9px}
-  .steps li{counter-increment:s;display:grid;grid-template-columns:20px 1fr;gap:9px;
-    max-width:70ch}
+  .steps li{counter-increment:s;display:grid;grid-template-columns:20px minmax(0,1fr);
+    gap:9px;max-width:70ch;align-items:start}
   .steps li::before{content:counter(s);font-family:var(--mono);font-size:10px;
     color:var(--accent);border:1px solid var(--accent-soft);border-radius:3px;
-    height:17px;display:flex;align-items:center;justify-content:center;
+    width:20px;height:17px;display:flex;align-items:center;justify-content:center;
     background:var(--accent-soft)}
+  .stepbody{min-width:0}
   .steps strong{display:block;font-size:12px;font-weight:640;color:var(--ink)}
   .steps span{display:block;font-size:12px;line-height:1.46;color:var(--ink-2);margin-top:2px}
 
