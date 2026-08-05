@@ -1,0 +1,16 @@
+# The corpus itself never goes to GitHub. These hold the full text of 292 posts
+# written by other people; the published site indexes and links to them instead.
+data/
+posts/
+by-topic/
+INDEX.md
+
+# Local full-text builds. The publishable versions are generated into docs/
+# with --public and are the only HTML that belongs in this repo.
+/sales-tips-library.html
+/field-guide.html
+
+__pycache__/
+*.pyc
+.DS_Store
+README.local.md
